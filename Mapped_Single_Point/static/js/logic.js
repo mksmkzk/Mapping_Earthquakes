@@ -10,3 +10,10 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
+
+//  Add a marker to the map for Los Angeles, California.
+L.circle([34.0522, -118.2437], {
+    color: 'black',
+    fillColor: "lightyellow",
+    radius: 300
+ }).addTo(map);
